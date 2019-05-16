@@ -22,6 +22,11 @@
     align-items: center;  
     margin-top: 10px;
     border: 2.5px solid @lambda-red;
+    transition: transform 0.5s ease-in-out;
+    transition-duration: 500ms;
+    transform: scaleY(1);
+    transform-origin: top;
+    
   }
   .dropdown-link {
     width: 100%;
@@ -36,7 +41,11 @@
     }
   }
   .dropdown-hidden {
-    display: none;
+    //display: none;
+    transition: transform 0.5s ease-out;
+    transition-duration: 500ms;
+    transform: scaleY(0);
+    transform-origin: top;
   }
 }
 
