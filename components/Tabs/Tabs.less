@@ -8,7 +8,9 @@
     padding-top: 60px;
   }
   .tabs-item {
-    display: none; 
+    display: none;
+    opacity: 1;
+    animation: fade 2s linear; 
 
     width: 75%;
     .tabs-item-title {
@@ -48,4 +50,9 @@
   }
 }
 
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
 

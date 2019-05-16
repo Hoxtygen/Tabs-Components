@@ -63,6 +63,8 @@
 }
 .tabs .tabs-item {
   display: none;
+  opacity: 1;
+  animation: fade 2s linear;
   width: 75%;
 }
 .tabs .tabs-item .tabs-item-title {
@@ -96,6 +98,15 @@
 }
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
+}
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 body {
   box-sizing: border-box;
